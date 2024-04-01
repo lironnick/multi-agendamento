@@ -6,14 +6,19 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch ./src/server.ts"
+    "dev": "tsx watch --env-file .env ./src/server.ts",
+    "bulid": "tsup src"
   },
   "dependencies": {
     "fastify": "^4.26.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.3",
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "^20.12.2",
+    "tsup": "^8.0.2",
     "tsx": "^4.7.1",
     "typescript": "^5.4.3"
   }

@@ -1,0 +1,12 @@
+version: '3.8' # Specify the Docker Compose version
+
+services:
+  mysql:
+    image: mysql:8.0 # Use the Bitnami MySQL image with version 8.0 (choose your desired version)
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=docker
+      - MYSQL_PASSWORD=docker
+      - MYSQL_DATABASE=mult_agendamento
