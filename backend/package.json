@@ -6,6 +6,15 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "tsx watch ./src/server.ts"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
   }
 }
